@@ -1,0 +1,9 @@
+// =============================================================================
+// Font Face
+// =============================================================================
+@include font-face($font-name, font/$font-thin, 100, normal);
+@include font-face($font-name, font/$font-light, 300, normal);
+@include font-face($font-name, font/$font-regular, 400, normal);
+@include font-face($font-name, font/$font-medium, 500, normal);
+@include font-face($font-name, font/$font-bold, 700, normal);
+@include font-face($font-name, font/$font-black, 900, normal);

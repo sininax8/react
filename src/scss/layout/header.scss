@@ -1,0 +1,21 @@
+.MyComponent {
+    background: green;
+    color: black;
+    padding: 1rem;
+    
+    .header01 {
+    background: white;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    
+
+        li{
+            &:nth-child(2){
+                color:red
+            }
+        }
+    }
+}
+    

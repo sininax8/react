@@ -1,0 +1,20 @@
+// Set a rem font size with pixel fallback
+@function calculateRem($size) {
+    $remSize: $size / 10px;
+    @return $remSize * 1rem;
+  }
+  
+  
+  // box column 계산
+  $total: 10;
+  @function col-group($n) {
+    // 결과 반환(@return)
+    @return percentage($total / $n);
+  }
+  @for $i from 1 through $total {
+    .col-#{$i} {
+      .col {
+        width: col-group($i * 10);
+      }
+    }
+  }
